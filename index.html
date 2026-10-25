@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abhi'S Crackers | WhatsApp Orders</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-icon">✦</span><span id="shopName">Abhi'S Crackers</span></a>
+    <a class="whatsapp-link" id="headerWhatsApp" href="#" target="_blank" rel="noopener">WhatsApp Us</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">LIGHT UP YOUR CELEBRATIONS</p>
+        <h1>Make every celebration<br><span>brighter.</span></h1>
+        <p>Explore our crackers catalogue, choose your favourites, and send your list to us on WhatsApp.</p>
+        <a class="primary-btn" href="#products">Explore Products ↓</a>
+        <p class="small-note">Order enquiries via WhatsApp · No online payment required</p>
+      </div>
+      <div class="hero-art" aria-label="Festive fireworks illustration">
+        <div class="moon"></div><div class="spark s1">✦</div><div class="spark s2">✧</div>
+        <div class="spark s3">✦</div><div class="spark s4">✧</div>
+        <div class="firework f1"><i></i></div><div class="firework f2"><i></i></div>
+        <div class="firework f3"><i></i></div>
+        <div class="hero-caption">CELEBRATE<br><b>WITH JOY</b></div>
+      </div>
+    </section>
+
+    <section class="catalogue" id="products">
+      <div class="section-heading">
+        <div><p class="eyebrow">OUR COLLECTION</p><h2>Shop crackers</h2><p class="muted">Choose items and quantities to build your list.</p></div>
+        <label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Search products..."></label>
+      </div>
+      <div class="filters" id="filters"></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="order-section" id="order">
+      <div class="order-intro"><p class="eyebrow">YOUR SELECTION</p><h2>Ready to send?</h2><p class="muted">Review your items, add your details, and send the enquiry to WhatsApp.</p>
+        <div class="trust-note">✓ Your selected items will be included in the WhatsApp message.</div>
+      </div>
+      <div class="order-card">
+        <div class="cart-heading"><h3>Your list</h3><button class="text-button" id="clearCart" type="button">Clear all</button></div>
+        <div id="cartItems" class="cart-items"><p class="empty">Your list is empty. Add products above to begin.</p></div>
+        <div class="total-row"><span>Estimated total</span><strong id="cartTotal">₹0</strong></div>
+        <p class="tiny">Final price and availability will be confirmed by the shop.</p>
+        <form id="orderForm">
+          <div class="form-grid">
+            <label>Your name<input id="customerName" required placeholder="Enter your name"></label>
+            <label>Mobile number<input id="customerPhone" required type="tel" placeholder="Your phone number"></label>
+          </div>
+          <label>City / delivery address<textarea id="customerAddress" rows="2" placeholder="Enter your city or address"></textarea></label>
+          <button class="send-btn" type="submit">Send my selection on WhatsApp <span>↗</span></button>
+          <p class="tiny">WhatsApp will open with your message. Press Send there to submit your enquiry.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+<footer>
+  <span id="footerShopName">Abhi'S Crackers</span>
+  <span>Celebrate responsibly. Follow local safety rules.</span>
+</footer>  <script src="script.js"></script>
+</body>
+</html>
